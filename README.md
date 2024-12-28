@@ -12,6 +12,12 @@ npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.ts
 ```
 
+# Configure the private key
+
+```shell
+npx hardhat vars set PRIVATE_KEY 
+```
+
 # Deploy to nexera
 
 ```shell
