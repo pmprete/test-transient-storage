@@ -24,10 +24,18 @@ npx hardhat vars set PRIVATE_KEY
 npx hardhat ignition deploy ./ignition/modules/TestTransientStorage.ts --network nexera
 ```
 
-# Test
+# Test Tasks
 
-Copy the deploy addresss in [/tasks/testTransientStorage.ts](./tasks/testTransientStorage.ts) then run
+*Copy the deploy addresss in [/tasks/testTransientStorage.ts](./tasks/testTransientStorage.ts)* then run
 
 ```shell
 npx hardhat transient  --network nexera
+```
+
+
+# Re-deploy
+In case you want to re deploy the contract you should delete previous deployment, run
+
+```shell
+bash clean.sh
 ```
