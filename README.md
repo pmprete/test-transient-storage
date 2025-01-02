@@ -39,3 +39,11 @@ In case you want to re deploy the contract you should delete previous deployment
 ```shell
 bash clean.sh
 ```
+
+# Verify
+
+Create a flattened file in order to verify the smart contract using
+
+```shell
+npm run flatten
+```

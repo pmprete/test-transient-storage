@@ -1,5 +1,12 @@
 {
   "name": "hardhat-project",
+  "scripts": {
+    "test": "REPORT_GAS=true npx hardhat test",
+    "deploy": "npx hardhat ignition deploy ./ignition/modules/TestTransientStorage.ts --network nexera",
+    "test-deploy": "npx hardhat transient  --network nexera",
+    "clean": "bash ./clean.sh",
+    "flatten": "npx hardhat flatten contracts/TestTransientStorage.sol > TestTransientStorage.sol"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.17"
